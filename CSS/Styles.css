@@ -1,26 +1,112 @@
 body {
-  margin: auto;
+  margin: 1em;
+}
+
+main {
+    grid-template-columns: 30em 35em;
+    justify-content: center;
+    padding: 20px;
 }
 
 .flex {
+    display: flex;
 }
 
 .grid {
+    display: grid;
 }
+
+.border_color {
+    border-color: #A6A6A6;
+}
+
+button {
+    background-color: #E1B07E;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 20em;
+    height: 2em;
+}
+
 
 /** || Header **/
 
+header {
+    flex-direction: row;
+    border-bottom: solid 1px;
+}
+
 .logo {
+    width: 10em;
 
 }
 
-.link_header {
-    
+.link_header a {
+    color: black;
+    text-decoration: none;
 }
 
+/** || Footer **/
 
-/** || Main **/
+footer {
+    flex-direction: column;
+    align-items:center ;
+    border-top: solid 1px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Index */
+/** || Section 1**/
+
+
+.info_section {
+    flex-direction: column;
+}
+
+.info_section p {
+    width: 21em;
+}
 
 .profil_image {
-
+    width: 40em;
 }
+
+
+/** || Section 2 **/
+
+.fun_fact_section {
+    flex-direction: column;
+}
+
+.absolutt {
+    position: absolute;
+    margin-top: 25em;
+    padding-left: 22em;
+}
+
+.absolutt p {
+    width: 10em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* Projects Page */
+/** || Project cards  **/
+
+.cover_image {
+    width: 100%;
+}
+
+ .card1, .card2, .card3 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  } 
