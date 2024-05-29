@@ -2,134 +2,149 @@ body {
   margin: 1em;
 }
 
-.main_index {
-    grid-template-columns: 30em 35em;
-    justify-content: center;
-    padding: 20px;
+h1 {
+    font-size: 30px;
+}
+
+p, button {
+    font-size: 18px;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .grid {
-    display: grid;
+  display: grid;
 }
 
 .border_color {
-    border-color: #A6A6A6;
+  border-color: #a6a6a6;
 }
 
 a {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 button {
-    background-color: #E1B07E;
-    border-style: none;
-    border-radius: 5px;
-    font-weight: 600;
-    width: 20em;
-    height: 2em;
+  background-color: #e1b07e;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 20em;
+  height: 2em;
 }
 
 
 /** || Header **/
 
 header {
-    border-bottom: solid 1px;
-    padding-bottom: 2em;
+  border-bottom: solid 1px;
+  padding-bottom: 2em;
 }
 
-header, footer {
-    flex-direction: column;
-    align-items:center ;
+header,
+footer {
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
-    width: 10em;
-
+  width: 10em;
 }
 
 .link_header {
-    font-size: 20px;
-    gap: 3em;
-    display: flex;
+  font-size: 20px;
+  gap: 3em;
+  display: flex;
 }
-
 
 /** || Footer **/
 
 footer {
-    border-top: solid 1px;
+  border-top: solid 1px;
 }
 
 footer p {
-    text-align: center;
+  text-align: center;
 }
 
 /* Index */
 /** || Section 1**/
 
+.main_index {
+  grid-template-columns: 30em 35em;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 3em;
+}
 
 .info_section {
-    flex-direction: column;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.info_section h1,
+.info_section h2 {
+    margin: 0;
 }
 
 .info_section p {
-    width: 21em;
+  width: 21em;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .profil_image {
-    width: 40em;
+  width: 40em;
 }
-
 
 /** || Section 2 **/
 
 .fun_fact_section {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .absolutt {
-    position: absolute;
-    margin-top: 25em;
-    padding-left: 22em;
+  position: absolute;
+  margin-top: 25em;
+  padding-left: 22em;
 }
 
 .absolutt p {
-    width: 10em;
+  width: 10em;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
-
 
 /* Projects Page */
 /** || Project cards  **/
 
 .main_project {
-    grid-template-columns: 25em 25em 25em;
-    justify-content: center;
-    gap: 2em;
-    margin: 5em;
+  grid-template-columns: 25em 25em 25em;
+  justify-content: center;
+  gap: 2em;
+  margin: 5em;
 }
 
 .cover_image {
-    width: 100%;
+  width: 100%;
 }
 
- .card1, .card2, .card3 {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  } 
+.card1,
+.card2,
+.card3 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 
-  .card1 a,
-  .card2 a,
-  .card3 a {
-    text-decoration: none;
-  }
+.card1 a,
+.card2 a,
+.card3 a {
+  text-decoration: none;
+}
