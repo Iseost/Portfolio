@@ -3,11 +3,12 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
-p, button {
-    font-size: 18px;
+p,
+button {
+  font-size: 18px;
 }
 
 .flex {
@@ -25,9 +26,11 @@ p, button {
 a {
   color: black;
   font-weight: bold;
+  font-size: 20px;
+  
 }
 
-button {
+#latestProjectsButton {
   background-color: #e1b07e;
   border-style: none;
   border-radius: 5px;
@@ -35,7 +38,6 @@ button {
   width: 20em;
   height: 2em;
 }
-
 
 /** || Header **/
 
@@ -87,7 +89,7 @@ footer p {
 
 .info_section h1,
 .info_section h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .info_section p {
@@ -123,10 +125,15 @@ footer p {
 /* Projects Page */
 /** || Project cards  **/
 
+.title {
+    justify-content: center;
+    margin-top: 3em;
+}
+
 .main_project {
   grid-template-columns: 25em 25em 25em;
   justify-content: center;
-  gap: 2em;
+  gap: 5em;
   margin: 5em;
 }
 
@@ -141,10 +148,17 @@ footer p {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
+  flex-direction: column;
+}
+
+.card_content {
+    flex-direction: column;
+    padding-top: 1em;
+    padding-left: 3em;
 }
 
 .card1 a,
 .card2 a,
 .card3 a {
-  text-decoration: none;
+  line-height: 2;
 }
