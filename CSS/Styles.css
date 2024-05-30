@@ -194,3 +194,28 @@ footer p {
       text-align: center;
     }
   }
+
+  @media (max-width: 450px) {
+    .fun_fact_section {
+        flex-direction: row;
+        margin-top: 5em;   
+    }
+
+    .profil_image {
+        width: 100%;
+        max-width: 300px;
+        padding-right: 3em;
+    }
+
+    .absolutt {
+        margin-top: 10em;
+        padding-left: 13em;
+        position: absolute;
+    }
+
+    footer {
+        margin-top: 3em;
+    }
+}
+
+  
