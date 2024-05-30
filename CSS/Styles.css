@@ -193,9 +193,20 @@ footer p {
       padding-left: 0;
       text-align: center;
     }
+
+    /* project */
+
+    .main_project {
+        grid-template-columns: none;
+    }
   }
 
   @media (max-width: 450px) {
+
+    p, a {
+        font-size: 12px
+    }
+
     .fun_fact_section {
         flex-direction: row;
         margin-top: 5em;   
