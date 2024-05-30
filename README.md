@@ -1,6 +1,8 @@
 # Portfolio
 Portfolio page showing my latest projects
 
+![image](![image](https://github.com/Iseost/Portfolio/assets/94354710/dc2b6bb6-2cf4-441b-a58f-44de0d7c273d)
+)
 
 <!-- # Your project title
 
