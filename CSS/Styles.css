@@ -232,6 +232,12 @@ footer p {
     position: absolute;
   }
 
+  .card1,
+  .card2,
+  .card3 {
+    width: 15em;
+  }
+
   footer {
     margin-top: 3em;
   }
