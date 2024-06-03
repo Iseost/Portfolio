@@ -227,8 +227,8 @@ footer p {
   }
 
   .absolutt {
-    margin-top: 10em;
-    padding-left: 13em;
+    margin-top: 9em;
+    padding-left: 16em;
     position: absolute;
   }
 
@@ -236,6 +236,11 @@ footer p {
   .card2,
   .card3 {
     width: 15em;
+  }
+
+  header,
+  footer {
+    padding-left: 3em;
   }
 
   footer {
