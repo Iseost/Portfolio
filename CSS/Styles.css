@@ -45,6 +45,7 @@ a {
   font-weight: 600;
   width: 20em;
   height: 2em;
+  cursor: pointer;
 }
 
 /** || Header **/
