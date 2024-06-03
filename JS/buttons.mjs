@@ -2,3 +2,4 @@ document.getElementById('latestProjectsButton').addEventListener('click', functi
     window.location.href = './project.html';
   });
   
+  

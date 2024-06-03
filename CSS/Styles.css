@@ -2,6 +2,14 @@ body {
   margin: 1em;
 }
 
+h1,
+h2,
+p,
+a,
+button {
+  font-family: "Noto Sans", sans-serif;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -9,6 +17,7 @@ h1 {
 p,
 button {
   font-size: 18px;
+  letter-spacing: 1.6px;
 }
 
 .flex {
@@ -27,7 +36,6 @@ a {
   color: black;
   font-weight: bold;
   font-size: 20px;
-  
 }
 
 #latestProjectsButton {
@@ -126,8 +134,8 @@ footer p {
 /** || Project cards  **/
 
 .title {
-    justify-content: center;
-    margin-top: 3em;
+  justify-content: center;
+  margin-top: 3em;
 }
 
 .main_project {
@@ -146,15 +154,15 @@ footer p {
 .card3 {
   padding: 20px;
   background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  border: 1px solid #7b513a;
   border-radius: 5px;
   flex-direction: column;
 }
 
 .card_content {
-    flex-direction: column;
-    padding-top: 1em;
-    padding-left: 3em;
+  flex-direction: column;
+  padding-top: 1em;
+  padding-left: 3em;
 }
 
 .card1 a,
@@ -166,67 +174,65 @@ footer p {
 /** || Media Query **/
 
 @media (max-width: 768px) {
-    .main_index {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .info_section,
-    .fun_fact_section {
-      width: 100%;
-    }
-
-    .fun_fact_section {
-        flex-direction: row;
-        margin-top: 5em;
-    }
-  
-    .profil_image {
-      width: 100%;
-      max-width: 300px;
-    }
-  
-    .absolutt {
-      position: static;
-      margin-top: 1em;
-      padding-left: 0;
-      text-align: center;
-    }
-
-    /* project */
-
-    .main_project {
-        grid-template-columns: none;
-    }
+  .main_index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  @media (max-width: 450px) {
+  .info_section,
+  .fun_fact_section {
+    width: 100%;
+  }
 
-    p, a {
-        font-size: 12px
-    }
+  .fun_fact_section {
+    flex-direction: row;
+    margin-top: 5em;
+  }
 
-    .fun_fact_section {
-        flex-direction: row;
-        margin-top: 5em;   
-    }
+  .profil_image {
+    width: 100%;
+    max-width: 300px;
+  }
 
-    .profil_image {
-        width: 100%;
-        max-width: 300px;
-        padding-right: 3em;
-    }
+  .absolutt {
+    position: static;
+    margin-top: 1em;
+    padding-left: 0;
+    text-align: center;
+  }
 
-    .absolutt {
-        margin-top: 10em;
-        padding-left: 13em;
-        position: absolute;
-    }
+  /* project */
 
-    footer {
-        margin-top: 3em;
-    }
+  .main_project {
+    grid-template-columns: none;
+  }
 }
 
-  
+@media (max-width: 450px) {
+  p,
+  a {
+    font-size: 12px;
+  }
+
+  .fun_fact_section {
+    flex-direction: row;
+    margin-top: 5em;
+  }
+
+  .profil_image {
+    width: 100%;
+    max-width: 300px;
+    padding-right: 3em;
+  }
+
+  .absolutt {
+    margin-top: 10em;
+    padding-left: 13em;
+    position: absolute;
+  }
+
+  footer {
+    margin-top: 3em;
+  }
+}
