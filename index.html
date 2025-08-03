@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Iselin Engen</title>
-    <link rel="stylesheet" href="../CSS/Styles.css" />
+    <link rel="stylesheet" href="./src/output.css" />
     <script type="module" src="../JS/footer.mjs"></script>
     <script type="module" src="../JS/header.mjs"></script>
     <script type="module" src="../JS/buttons.mjs"></script>
@@ -16,15 +16,19 @@
     />
   </head>
   <body>
-    <header id="appHeader" class="flex border_color"></header>
-    <main class="grid main_index">
+    <header id="appHeader"></header>
+    <main>
       <!--Section 1-->
-      <section class="flex info_section">
+      <section>
         <h1>Hi everyone,</h1>
         <h2>I'm Iselin!</h2>
         <p>
-          Hey there! I’m a frontend development student in my final semester — graduation is just around the corner this December. I spend my days turning ideas into interactive interfaces, and my nights figuring out how to make them even better.
-          I’m always learning, experimenting, and refining my skills — whether I’m coding solo or teaming up on projects.
+          Hey there! I'm a frontend development student in my final semester —
+          graduation is just around the corner this December. I spend my days
+          turning ideas into interactive interfaces, and my nights figuring out
+          how to make them even better. I'm always learning, experimenting, and
+          refining my skills — whether I'm coding solo or teaming up on
+          projects.
         </p>
         <p>👇 Take a look at some of the things I’ve built along the way!</p>
         <button id="latestProjectsButton">Take a Peek at My Work</button>
@@ -32,15 +36,15 @@
       <!--Section 1 end-->
       <!--Section 2-->
       <section>
-        <div class="flex fun_fact_section">
+        <div>
           <img
-            class="profil_image"
-            src="./Image/Portofolie - with funfacts.jpg"
-            alt="image of Iselin"
+            src="./assets/Portofolie - with funfacts.jpg"
+            alt="image and facts about Iselin"
           />
+        </div>
       </section>
     </main>
     <!--Section 2 end-->
-    <footer id="appFooter" class="flex border_color"></footer>
+    <footer id="appFooter"></footer>
   </body>
 </html>
