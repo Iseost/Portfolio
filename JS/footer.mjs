@@ -1,18 +1,16 @@
 const appFooter = document.getElementById("appFooter");
 
-// Clear existing content if any
-appFooter.innerHTML = "";
+appFooter.className = "flex flex-col items-center justify-center text-center py-6";
 
-// Create and append logo image
 const footerLogo = document.createElement("img");
-footerLogo.className = "logo";
+footerLogo.className = "logo w-24 h-auto mb-4";
 footerLogo.src = "./assets/logoiselin.png";
 footerLogo.alt = "Logo";
 
 appFooter.appendChild(footerLogo);
 
-// Create and append copyright
 const copyright = document.createElement("p");
 copyright.innerHTML = "&copy; Iselin Engen";
+copyright.className = "text-gray-600 text-sm";
 
 appFooter.appendChild(copyright);

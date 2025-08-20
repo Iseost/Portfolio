@@ -10,90 +10,110 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-gray-50 text-gray-800 font-sans">
     <header id="appHeader"></header>
-    <main>
-      <h1>Second year</h1>
+
+    <main class="max-w-5xl mx-auto p-6 space-y-12">
+      <h1 class="text-4xl font-bold mb-6">Second year</h1>
       <section></section>
-      <h1>First year</h1>
-      <section>
+
+      <h1 class="text-4xl font-bold mb-6">First year</h1>
+      <section class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <!--Card 1-->
-        <div>
+        <div class="bg-white shadow-md rounded-xl overflow-hidden">
           <img
             src="./assets/hotview.png"
             alt="Screenshot of the top of the page"
+            class="w-full object-cover"
           />
-          <div>
-            <h2>HotView Labs</h2>
-            <p>
+          <div class="p-4 space-y-3">
+            <h2 class="text-xl font-semibold">HotView Labs</h2>
+            <p class="text-sm leading-relaxed">
               Project exam, where I was required to use all of the skills that
-              you have learned this year at FED1 (frontend first year) including
-              design, HTML, CSS and JavaScript. Project brief: You have been
-              hired to build a front-end user interface for an existing API
-              blogging application. The client has asked for a responsive
-              application that allows users to view dynamic blog posts. The
-              client requires admin pages to register, login and manage their
-              blog posts. The page is build with HTML, CSS, JavaScript and
-              design by me.
+              you have learned this year at FED1...
             </p>
-            <a href="https://github.com/NoroffFEU/FED1-PE1-Iseost.git"
-              >Link to my repository</a
-            >
-            <a href="https://fed1-pe1-iseost.netlify.app/"
-              >Link to my current webpage</a
-            >
+            <div class="flex gap-4">
+              <a
+                class="text-blue-600 hover:underline"
+                href="https://github.com/NoroffFEU/FED1-PE1-Iseost.git"
+              >
+                Repository
+              </a>
+              <a
+                class="text-blue-600 hover:underline"
+                href="https://fed1-pe1-iseost.netlify.app/"
+              >
+                Website
+              </a>
+            </div>
           </div>
         </div>
+
         <!--Card 2-->
-        <div>
+        <div class="bg-white shadow-md rounded-xl overflow-hidden">
           <img
             src="./assets/museum.png"
-            alt="Sceenshoot of the top of the page"
+            alt="Screenshot of the top of the page"
+            class="w-full object-cover"
           />
-          <div>
-            <h2>Stavanger Science Museum</h2>
-            <p>
+          <div class="p-4 space-y-3">
+            <h2 class="text-xl font-semibold">Stavanger Science Museum</h2>
+            <p class="text-sm leading-relaxed">
               My second project, semester project, using HTML, CSS and my design
-              skills as a frontend student at Noroff College. My "client" was a
-              community science museum - a museum where the target audience is
-              primary and middle school children (ages 7-15) and families with
-              young children. The page is build with pure HTML and CSS. It's
-              also design by me.
+              skills...
             </p>
-            <a href="https://github.com/Iseost/Iseost.github.io.git"
-              >Link to my repository</a
-            >
-            <a href="https://iseost.github.io/">Link to my current webpage</a>
+            <div class="flex gap-4">
+              <a
+                class="text-blue-600 hover:underline"
+                href="https://github.com/Iseost/Iseost.github.io.git"
+              >
+                Repository
+              </a>
+              <a
+                class="text-blue-600 hover:underline"
+                href="https://iseost.github.io/"
+              >
+                Website
+              </a>
+            </div>
           </div>
         </div>
+
         <!--Card 3-->
-        <div>
+        <div class="bg-white shadow-md rounded-xl overflow-hidden">
           <img
             src="./assets/gamehub.png"
-            alt="Sceenshoot of the top of the page"
+            alt="Screenshot of the top of the page"
+            class="w-full object-cover"
           />
-          <div>
-            <h2>GameHub</h2>
-            <p>
-              My first project using HTML and CSS as a frontend student at
-              Noroff College. My "client" was a GameHub, an online shop where
-              users can purchase computer games. This was also my fist time
-              deigning a page.
+          <div class="p-4 space-y-3">
+            <h2 class="text-xl font-semibold">GameHub</h2>
+            <p class="text-sm leading-relaxed">
+              My first project using HTML and CSS as a frontend student...
             </p>
-            <a href="https://github.com/Iseost/Gamehub.git"
-              >Link to my repository</a
-            >
-            <a href="https://gamehub-iselin.netlify.app"
-              >Link to my current webpage</a
-            >
+            <div class="flex gap-4">
+              <a
+                class="text-blue-600 hover:underline"
+                href="https://github.com/Iseost/Gamehub.git"
+              >
+                Repository
+              </a>
+              <a
+                class="text-blue-600 hover:underline"
+                href="https://gamehub-iselin.netlify.app"
+              >
+                Website
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer id="appFooter"></footer>
   </body>
 </html>

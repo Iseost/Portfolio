@@ -17,33 +17,40 @@
   </head>
   <body>
     <header id="appHeader"></header>
-    <main>
-      <!--Section 1-->
-      <section>
-        <h1>Hi everyone,</h1>
-        <h2>I'm Iselin!</h2>
-        <p>
-          Hey there! I'm a frontend development student in my final semester —
-          graduation is just around the corner this December. I spend my days
-          turning ideas into interactive interfaces, and my nights figuring out
-          how to make them even better. I'm always learning, experimenting, and
-          refining my skills — whether I'm coding solo or teaming up on
-          projects.
-        </p>
-        <p>👇 Take a look at some of the things I’ve built along the way!</p>
-        <button id="latestProjectsButton">Take a Peek at My Work</button>
-      </section>
-      <!--Section 1 end-->
-      <!--Section 2-->
-      <section>
-        <div>
+    <main class="max-w-6xl mx-auto p-8">
+      <!-- Hero Section -->
+      <section class="flex flex-col md:flex-row items-center gap-8">
+        <!-- Tekst til venstre -->
+        <div class="flex-1 space-y-4">
+          <h1 class="text-4xl font-bold">Hi everyone,</h1>
+          <h2 class="text-2xl">I'm Iselin!</h2>
+          <p>
+            I'm a frontend development student in my final semester — graduation
+            is just around the corner this December. I spend my days turning
+            ideas into interactive interfaces, and my nights figuring out how to
+            make them even better. I'm always learning, experimenting, and
+            refining my skills — whether I'm coding solo or teaming up on
+            projects.
+          </p>
+          <p>👇 Take a look at some of the things I’ve built along the way!</p>
+          <button
+            id="latestProjectsButton"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Take a Peek at My Work
+          </button>
+        </div>
+
+        <div class="flex-1">
           <img
             src="./assets/Portofolie - with funfacts.jpg"
             alt="image and facts about Iselin"
+            class="w-full"
           />
         </div>
       </section>
     </main>
+
     <!--Section 2 end-->
     <footer id="appFooter"></footer>
   </body>
