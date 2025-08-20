@@ -19,12 +19,12 @@ linkHeader.className = "link_header flex flex-col md:flex-row gap-4 text-lg";
 const projectsLink = document.createElement("a");
 projectsLink.href = "./project.html";
 projectsLink.textContent = "My projects";
-projectsLink.className = "text-blue-600 hover:underline";
+projectsLink.className = "text-gray-600 font-bold hover:underline";
 
 const linkedinLink = document.createElement("a");
 linkedinLink.href = "https://www.linkedin.com/in/iselin-østerhus-engen-767b46284";
 linkedinLink.textContent = "My Linkedin profile";
-linkedinLink.className = "text-blue-600 hover:underline";
+linkedinLink.className = "text-gray-600 font-bold hover:underline";
 
 linkHeader.appendChild(projectsLink);
 linkHeader.appendChild(linkedinLink);

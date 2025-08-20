@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Iselin Engen</title>
+    <title>Portfolio - Frontend Developer</title>
     <link rel="stylesheet" href="./src/output.css" />
     <script type="module" src="../JS/footer.mjs"></script>
     <script type="module" src="../JS/header.mjs"></script>
@@ -17,10 +17,10 @@
   </head>
   <body>
     <header id="appHeader"></header>
-    <main class="max-w-6xl mx-auto p-8">
+    <main class="max-w-6xl mx-auto p-8 bg-gray-50 text-gray-800">
       <!-- Hero Section -->
       <section class="flex flex-col md:flex-row items-center gap-8">
-        <!-- Tekst til venstre -->
+        <!-- Text on the left -->
         <div class="flex-1 space-y-4">
           <h1 class="text-4xl font-bold">Hi everyone,</h1>
           <h2 class="text-2xl">I'm Iselin!</h2>
@@ -35,7 +35,8 @@
           <p>👇 Take a look at some of the things I’ve built along the way!</p>
           <button
             id="latestProjectsButton"
-            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+            class="bg-[#E1B07E] text-black font-semibold px-4 py-2 rounded hover:bg-[#E7C098] transition-colors"
+            onclick="scrollToSection('latestProjects')"
           >
             Take a Peek at My Work
           </button>
@@ -43,8 +44,8 @@
 
         <div class="flex-1">
           <img
-            src="./assets/Portofolie - with funfacts.jpg"
-            alt="image and facts about Iselin"
+            src="./assets/Group 4.jpg"
+            alt="image and facts about the developer"
             class="w-full"
           />
         </div>
