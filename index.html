@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Frontend Developer</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <script type="module" src="./JS/aboutMe.mjs"></script>
     <script type="module" src="../JS/footer.mjs"></script>
     <script type="module" src="../JS/header.mjs"></script>
     <script type="module" src="../JS/buttons.mjs"></script>
@@ -20,7 +21,7 @@
     <main class="max-w-6xl mx-auto p-8 bg-gray-50 text-gray-800">
       <!-- Hero Section -->
       <section class="flex flex-col md:flex-row items-center gap-8">
-        <!-- Text on the left -->
+        <!-- Tekst + knapp til venstre -->
         <div class="flex-1 space-y-4">
           <h1 class="text-4xl font-bold">Hi everyone,</h1>
           <h2 class="text-2xl">I'm Iselin!</h2>
@@ -42,14 +43,11 @@
           </button>
         </div>
 
-        <div class="flex-1">
-          <img
-            src="./assets/Group 4.jpg"
-            alt="image and facts about the developer"
-            class="w-full"
-          />
-        </div>
+        <!-- Bilde + fakta til høyre -->
+        <div id="aboutMe" class="flex-1 flex justify-center"></div>
       </section>
+
+      <!-- (andre seksjoner kan komme under her) -->
     </main>
 
     <!--Section 2 end-->
