@@ -6,7 +6,7 @@ export function renderFooter() {
 
     const footerLogo = document.createElement("img");
     footerLogo.className = "logo w-24 h-auto mb-4";
-    footerLogo.src = "./assets/logoiselin.png";
+    footerLogo.src = "../assets/logoiselin.png";
     footerLogo.alt = "Logo";
 
     appFooter.appendChild(footerLogo);

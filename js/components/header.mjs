@@ -3,11 +3,11 @@ export function renderHeader() {
     appHeader.className = "bg-white flex flex-col items-center justify-center text-center py-6";
 
     const logoLink = document.createElement("a");
-    logoLink.href = "./index.html";
+    logoLink.href = "../index.html";
 
     const logoImg = document.createElement("img");
     logoImg.className = "logo w-34 h-auto mb-4";
-    logoImg.src = "./assets/logoiselin.png";
+    logoImg.src = "../assets/logoiselin.png";
     logoImg.alt = "Logo";
 
     logoLink.appendChild(logoImg);
@@ -17,7 +17,7 @@ export function renderHeader() {
     linkHeader.className = "link_header flex flex-col md:flex-row gap-4 text-lg";
 
     const projectsLink = document.createElement("a");
-    projectsLink.href = "./project.html";
+    projectsLink.href = "../project.html";
     projectsLink.textContent = "My projects";
     projectsLink.className = "text-gray-600 font-bold hover:underline";
 

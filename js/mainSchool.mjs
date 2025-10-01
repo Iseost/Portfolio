@@ -1,7 +1,8 @@
+// js/mainSchool.mjs
 import { renderHeader } from './components/header.mjs';
 import { renderFooter } from './components/footer.mjs';
-import { renderSchoolProjects } from './components/projects.mjs';
+import { renderSchoolProjects } from './components/schoolProjects.mjs';
 
 renderHeader();
 renderFooter();
-renderSchoolProjects(); // viser skoleprosjekter med repo/website
+renderSchoolProjects();
