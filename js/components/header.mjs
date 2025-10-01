@@ -1,6 +1,6 @@
 export function renderHeader() {
     const appHeader = document.getElementById("appHeader");
-    appHeader.className = "bg-white flex flex-col items-center justify-center text-center py-6";
+    appHeader.className = "flex flex-col items-center justify-center text-center py-6 bg-white";
 
     const logoLink = document.createElement("a");
     logoLink.href = "../index.html";
@@ -28,4 +28,5 @@ export function renderHeader() {
 
     linkHeader.append(projectsLink, linkedinLink);
     appHeader.appendChild(linkHeader);
+
 }

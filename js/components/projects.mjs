@@ -21,11 +21,11 @@ export function renderProjectsOverview() {
   ];
 
   const section = document.createElement("section");
-  section.className = "grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12";
+  section.className = "grid gap-8 md:grid-cols-2 lg:grid-cols-2";
 
   projects.forEach(p => {
     const card = document.createElement("div");
-    card.className = "bg-white shadow-md rounded-xl overflow-hidden transition hover:scale-105 duration-200";
+    card.className = "bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-shadow";
     card.innerHTML = `
       <img src="${p.img}" alt="${p.title}" class="w-full h-48 object-cover"/>
       <div class="p-4 space-y-3">

@@ -24,7 +24,7 @@ export function renderPrivateProjects() {
 
     portfolio.forEach(sectionData => {
         const h1 = document.createElement("h1");
-        h1.className = "text-4xl font-bold mb-6";
+        h1.className = "text-4xl font-semibold mb-10";
         h1.textContent = sectionData.year;
         main.appendChild(h1);
 
