@@ -5,52 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Frontend Developer</title>
     <link rel="stylesheet" href="./src/output.css" />
-    <script type="module" src="./JS/aboutMe.mjs"></script>
-    <script type="module" src="../JS/footer.mjs"></script>
-    <script type="module" src="../JS/header.mjs"></script>
-    <script type="module" src="../JS/buttons.mjs"></script>
+    <script type="module" src="./js/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-gray-50 text-gray-800">
     <header id="appHeader"></header>
-    <main class="max-w-6xl mx-auto p-8 bg-gray-50 text-gray-800">
-      <!-- Hero Section -->
-      <section class="flex flex-col md:flex-row items-center gap-8">
-        <!-- Tekst + knapp til venstre -->
-        <div class="flex-1 space-y-4">
-          <h1 class="text-4xl font-bold">Hi everyone,</h1>
-          <h2 class="text-2xl">I'm Iselin!</h2>
-          <p>
-            I'm a frontend development student in my final semester — graduation
-            is just around the corner this December. I spend my days turning
-            ideas into interactive interfaces, and my nights figuring out how to
-            make them even better. I'm always learning, experimenting, and
-            refining my skills — whether I'm coding solo or teaming up on
-            projects.
-          </p>
-          <p>👇 Take a look at some of the things I’ve built along the way!</p>
-          <button
-            id="latestProjectsButton"
-            class="bg-[#E1B07E] text-gray-800 font-semibold px-4 py-2 rounded hover:bg-[#E7C098] transition-colors"
-            onclick="scrollToSection('latestProjects')"
-          >
-            Take a Peek at My Work
-          </button>
-        </div>
-
-        <!-- Bilde + fakta til høyre -->
-        <div id="aboutMe" class="flex-1 flex justify-center"></div>
-      </section>
-
-      <!-- (andre seksjoner kan komme under her) -->
-    </main>
-
-    <!--Section 2 end-->
+    <main id="appMain" class="max-w-6xl mx-auto p-8"></main>
     <footer id="appFooter"></footer>
   </body>
 </html>
