@@ -1,4 +1,3 @@
-// js/components/projects.mjs
 export function renderProjectsOverview() {
   const container = document.getElementById("appMain");
   container.innerHTML = "";

@@ -1,4 +1,3 @@
-// footer.mjs
 export function renderFooter() {
     const appFooter = document.getElementById("appFooter");
 

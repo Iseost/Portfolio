@@ -1,4 +1,3 @@
-// aboutMe.mjs
 export function renderAboutMe() {
   const container = document.getElementById("appMain");
 

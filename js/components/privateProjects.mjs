@@ -1,4 +1,3 @@
-// js/components/privateProjects.mjs
 export function renderPrivateProjects() {
     const container = document.getElementById("appMain");
     container.innerHTML = "";
@@ -35,7 +34,6 @@ export function renderPrivateProjects() {
             const card = document.createElement("div");
             card.className = "bg-white shadow-md rounded-xl overflow-hidden";
 
-            // Kort beskrivelse
             const shortDesc = p.description.slice(0, 150) + "...";
 
             card.innerHTML = `
@@ -53,19 +51,18 @@ export function renderPrivateProjects() {
                 </div>
             `;
 
-            // Read more / Show less funksjon
             const btn = card.querySelector(".read-more-btn");
             const descSpan = card.querySelector(".description");
             let expanded = false;
 
             btn.addEventListener("click", () => {
                 if (!expanded) {
-                    descSpan.textContent = p.description;  // vis full tekst
-                    btn.textContent = "Show less";         // endre knapptekst
+                    descSpan.textContent = p.description;
+                    btn.textContent = "Show less";
                     expanded = true;
                 } else {
-                    descSpan.textContent = shortDesc;     // gå tilbake til kort tekst
-                    btn.textContent = "Read more";        // endre tilbake knapptekst
+                    descSpan.textContent = shortDesc;
+                    btn.textContent = "Read more";
                     expanded = false;
                 }
             });

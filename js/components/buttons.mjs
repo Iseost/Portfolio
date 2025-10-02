@@ -1,5 +1,3 @@
-//js/components/buttons.mjs
-
 export function setupButtons() {
   const latestProjectsButton = document.getElementById("latestProjectsButton");
   if (latestProjectsButton) {

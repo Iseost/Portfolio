@@ -1,4 +1,3 @@
-// js/components/schoolProjects.mjs
 export function renderSchoolProjects() {
     const container = document.getElementById("appMain");
     container.innerHTML = "";
@@ -68,19 +67,19 @@ export function renderSchoolProjects() {
             const shortDesc = p.description.slice(0, 150) + "...";
 
             card.innerHTML = `
-  <img src="${p.img}" alt="Screenshot of ${p.title}" class="w-full object-cover"/>
-  <div class="p-4 space-y-3">
-    <h2 class="text-xl font-semibold">${p.title}</h2>
-    <p class="text-sm leading-relaxed">
-      <span class="description inline">${shortDesc}</span>
-      <button class="text-gray-600 font-semibold hover:underline read-more-btn inline">Read more</button>
-    </p>
-    <div class="flex gap-4 mt-2">
-      <a class="text-gray-600 font-bold hover:underline" href="${p.repo}" target="_blank">Repository</a>
-      <a class="text-gray-600 font-bold hover:underline" href="${p.site}" target="_blank">Website</a>
-    </div>
-  </div>
-`;
+            <img src="${p.img}" alt="Screenshot of ${p.title}" class="w-full object-cover"/>
+            <div class="p-4 space-y-3">
+                <h2 class="text-xl font-semibold">${p.title}</h2>
+                <p class="text-sm leading-relaxed">
+                    <span class="description inline">${shortDesc}</span>
+                <button class="text-gray-600 font-semibold hover:underline read-more-btn inline">Read more</button>
+                </p>
+            <div class="flex gap-4 mt-2">
+            <a class="text-gray-600 font-bold hover:underline" href="${p.repo}" target="_blank">Repository</a>
+            <a class="text-gray-600 font-bold hover:underline" href="${p.site}" target="_blank">Website</a>
+            </div>
+        </div>
+        `;
 
 
 
@@ -90,12 +89,12 @@ export function renderSchoolProjects() {
 
             btn.addEventListener("click", () => {
                 if (!expanded) {
-                    descSpan.textContent = p.description;  // vis full tekst
-                    btn.textContent = "Show less";         // endre knapptekst
+                    descSpan.textContent = p.description;
+                    btn.textContent = "Show less";
                     expanded = true;
                 } else {
-                    descSpan.textContent = shortDesc;     // gå tilbake til kort tekst
-                    btn.textContent = "Read more";        // endre tilbake knapptekst
+                    descSpan.textContent = shortDesc;
+                    btn.textContent = "Read more";
                     expanded = false;
                 }
             });
