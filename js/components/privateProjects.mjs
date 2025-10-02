@@ -10,7 +10,7 @@ export function renderPrivateProjects() {
                 {
                     title: "Wedding invitation website",
                     description:
-                        "A personal project where I designed and built a wedding invitation using HTML, TailwindCSS, and JavaScript.",
+                        "A personal hobby project where I designed and built a wedding invitation website using HTML, TailwindCSS, and JavaScript. Instead of sending a traditional paper invitation, I wanted to create something interactive and personal, applying the skills I had learned to make a simple, elegant, and functional online invitation for friends and family.",
                     img: "../assets/Skjermbilde 2025-09-30 091827.png",
                     repo: "https://github.com/Iseost/Morten-Iselin",
                     site: "https://mortenogiselin.no/",
@@ -35,17 +35,41 @@ export function renderPrivateProjects() {
             const card = document.createElement("div");
             card.className = "bg-white shadow-md rounded-xl overflow-hidden";
 
+            // Kort beskrivelse
+            const shortDesc = p.description.slice(0, 150) + "...";
+
             card.innerHTML = `
-        <img src="${p.img}" alt="Screenshot of ${p.title}" class="w-full object-cover"/>
-        <div class="p-4 space-y-3">
-          <h2 class="text-xl font-semibold">${p.title}</h2>
-          <p class="text-sm leading-relaxed">${p.description}</p>
-          <div class="flex gap-4">
-            <a class="text-gray-600 font-bold hover:underline" href="${p.repo}" target="_blank">Repository</a>
-            <a class="text-gray-600 font-bold hover:underline" href="${p.site}" target="_blank">Website</a>
-          </div>
-        </div>
-      `;
+                <img src="${p.img}" alt="Screenshot of ${p.title}" class="w-full object-cover"/>
+                <div class="p-4 space-y-3">
+                  <h2 class="text-xl font-semibold">${p.title}</h2>
+                  <p class="text-sm leading-relaxed">
+                    <span class="description inline">${shortDesc}</span>
+                    <button class="text-gray-600 font-semibold hover:underline read-more-btn inline">Read more</button>
+                  </p>
+                  <div class="flex gap-4 mt-2">
+                    <a class="text-gray-600 font-bold hover:underline" href="${p.repo}" target="_blank">Repository</a>
+                    <a class="text-gray-600 font-bold hover:underline" href="${p.site}" target="_blank">Website</a>
+                  </div>
+                </div>
+            `;
+
+            // Read more / Show less funksjon
+            const btn = card.querySelector(".read-more-btn");
+            const descSpan = card.querySelector(".description");
+            let expanded = false;
+
+            btn.addEventListener("click", () => {
+                if (!expanded) {
+                    descSpan.textContent = p.description;  // vis full tekst
+                    btn.textContent = "Show less";         // endre knapptekst
+                    expanded = true;
+                } else {
+                    descSpan.textContent = shortDesc;     // gå tilbake til kort tekst
+                    btn.textContent = "Read more";        // endre tilbake knapptekst
+                    expanded = false;
+                }
+            });
+
             section.appendChild(card);
         });
 
