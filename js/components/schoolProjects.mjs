@@ -30,14 +30,6 @@ export function renderSchoolProjects() {
                     repo: "https://github.com/NoroffFEU/FED1-PE1-Iseost.git",
                     site: "https://fed1-pe1-iseost.netlify.app/",
                 },
-                {
-                    title: "BrightCart",
-                    description:
-                        "This project was built using React, Vite, and TailwindCSS. It was part of a school assignment designed to demonstrate the skills and knowledge I gained during the JavaScript Frameworks course. The task included specific requirements outlining what the website needed to include, and the goal was to apply best practices in modern frontend development while creating a functional and visually consistent application.",
-                    img: "../assets/Skjermbilde 2025-10-06 174907.png",
-                    repo: "https://github.com/Iseost/online-store-assigment",
-                    site: "https://brightcart.netlify.app/",
-                }
             ],
         },
         {
@@ -51,6 +43,14 @@ export function renderSchoolProjects() {
                     repo: "https://github.com/Iseost/Auction-House",
                     site: "https://auctionhouse-sp2.netlify.app/",
                 },
+                {
+                    title: "BrightCart",
+                    description:
+                        "This project was built using React, Vite, and TailwindCSS. It was part of a school assignment designed to demonstrate the skills and knowledge I gained during the JavaScript Frameworks course. The task included specific requirements outlining what the website needed to include, and the goal was to apply best practices in modern frontend development while creating a functional and visually consistent application.",
+                    img: "../assets/Skjermbilde 2025-10-06 174907.png",
+                    repo: "https://github.com/Iseost/online-store-assigment",
+                    site: "https://brightcart.netlify.app/",
+                }
             ],
         },
     ];
