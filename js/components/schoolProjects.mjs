@@ -50,7 +50,15 @@ export function renderSchoolProjects() {
                     img: "../assets/Skjermbilde 2025-10-06 174907.png",
                     repo: "https://github.com/Iseost/online-store-assigment",
                     site: "https://brightcart.netlify.app/",
-                }
+                },
+                {
+                    title: "MMF - musikkforandrerliv",
+                    description:
+                        "This project was a collaborative effort between all Frontend Development students at Noroff. It’s an ongoing initiative that we participated in both during our first and second year of studies. Through this experience, we gained valuable insight into working with realistic clients, planning and executing projects, and collaborating effectively within a development team. I was part of the developer team both years, where I contributed to building and improving the frontend. We worked with a real-world workflow, including being assigned issues, creating and reviewing pull requests, and following version control best practices using Git and GitHub. The project was built using React, Tailwind CSS, and Decap CMS, with a focus on creating a responsive and user-friendly interface. This experience strengthened my understanding of component-based development, teamwork, and agile workflows — all essential skills for a professional frontend developer.",
+                    img: "../assets/Skjermbilde 2025-10-08 033058.png",
+                    repo: "https://github.com/NoroffFEU/musikkforandrerliv.no?tab=readme-ov-file",
+                    site: "https://norofffeu.github.io/musikkforandrerliv.no/",
+                },
             ],
         },
     ];
